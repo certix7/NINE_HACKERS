@@ -165,7 +165,7 @@ def scan():
         elif opt=="7":
             exit("netcat")
         elif opt=="8":
-                print("Nessus")
+                print(Nessus)
         elif opt=="*":
             exit()
 
