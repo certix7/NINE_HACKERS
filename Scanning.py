@@ -21,10 +21,11 @@ def scan():
 
 
     Wireshark='''
+    \033[31m
     ip.addr == {0}
     ip.addr == {0} and http
     http or arp
-    ip.addr == {0}and tcp.port == 80 '''
+    ip.addr == {0}and tcp.port == 80 '''.format(host)
 
 
     traceroute='''
@@ -36,6 +37,7 @@ def scan():
     tracert -d {0} #ICMP '''.format(host)
 
     nmap="""
+    \033[31m
     to see live hosts ping_sweap
     ------------
     nmap -n -sn {0}
@@ -101,6 +103,7 @@ def scan():
     '''.format(host)
 
     netcat=''''
+    \033[33m
     Find open ports
     nc -nv {0} 21
     nc -vz {0} 21
@@ -129,12 +132,13 @@ def scan():
     nc -nlvp 4444 > wget (wget.exe) #Victim Machine
     nc -nv 127.0.0.1 4444 < /usr/bin/wget (/usr/share/windows_binaries/wget.exe) #Kali Machine
 
-    '''.format(host)
+    '''.format(ip)
 
 
 
 
     Nessus='''
+    \033[33m
     https://www.tenable.com/downloads/nessus
     dpkg -i Nessus-6.9.4-debian6_amd64.deb
 
@@ -145,11 +149,12 @@ def scan():
     https://localhost:8834/ '''
 
 
-    if 1 :
+    while 1 :
         options=['1-TCPDUMP','2-Wireshark','3-traceroute','4-nmap',"4-SMB",'5-Enum4Linux','6-SMTP',"7-netcat","8-Nessus","*"]
         for i in options:    print(i)
 
-        opt=input ("put your option pls :")
+      
+        opt=input (R+"put your option pls :"+G)
         if opt=="1":
             print(TCPDUMP)
         elif opt=="2":
@@ -165,7 +170,7 @@ def scan():
         elif opt=="7":
             exit("netcat")
         elif opt=="8":
-                print(Nessus)
+                print("Nessus")
         elif opt=="*":
             exit()
 
