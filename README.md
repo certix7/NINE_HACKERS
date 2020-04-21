@@ -19,7 +19,7 @@ follow me at fb
 
 https://www.facebook.com/BADBON77
 
-youtube.com/c/certstars
+https://www.youtube.com/c/certstars
 
 
 NINE HACKERS  
