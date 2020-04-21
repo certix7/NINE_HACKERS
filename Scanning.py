@@ -74,7 +74,7 @@ def scan():
     nmap -p 21 --script=ftp-anon.nse {0}
     nmap -p 139,445 --script=smb-security-mode.nse {0}
     nmap --script=smb-os-discovery.nse {0}
-    nmap --script=dns-zone-transfer -p 53 {1}""".format(host,ip)
+    nmap --script=dns-zone-transfer -p 53 {1}""".format(ip,host)
 
 
     SMB='''
