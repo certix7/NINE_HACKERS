@@ -1,0 +1,8 @@
+#list all desks 
+lsblk
+sudo fdisk -l
+
+
+#open from terminal
+nautilus .
+open() {nohup nautilus -w $1 > /dev/null 2>&1 &}
