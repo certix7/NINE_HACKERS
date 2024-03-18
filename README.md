@@ -19,7 +19,6 @@ python3 main.py
 
 follow me at fb 
 
-https://www.facebook.com/BADBON77
 
 https://www.youtube.com/c/certstars
 
